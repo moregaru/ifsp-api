@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+import dj_database_url
 import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -119,6 +120,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+
+DATABASES['default'].update(dj_database_url.config(conn_max_age=500, ssl_require=True))
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/

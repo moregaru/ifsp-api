@@ -35,3 +35,12 @@ class AuthViewSet(DefaultMixin,viewsets.ModelViewSet):
     queryset = Auth.objects
 
     serializer_class = AuthListSerializer
+
+    def create(self, request, *args, **kargs):
+        pass
+
+    def update(self, request, *args, **kargs):
+        pass
+
+    def retrieve(self, request, *args, **kargs):
+        pass

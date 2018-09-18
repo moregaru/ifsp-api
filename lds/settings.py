@@ -62,7 +62,7 @@ DATABASES = {
         'NAME': 'ifsp-api',
         'USER': 'ifsp',
         'PASSWORD': 'ifsp',
-        'HOST': 'localhost',
+        'HOST': 'db',
         'PORT': '5432',
     }
 }
